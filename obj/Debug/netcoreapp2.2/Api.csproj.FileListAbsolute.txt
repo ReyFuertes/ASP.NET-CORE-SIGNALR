@@ -1,0 +1,16 @@
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\bin\Debug\netcoreapp2.2\Api.deps.json
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\bin\Debug\netcoreapp2.2\Api.runtimeconfig.json
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\bin\Debug\netcoreapp2.2\Api.runtimeconfig.dev.json
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\bin\Debug\netcoreapp2.2\Api.dll
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\bin\Debug\netcoreapp2.2\Api.pdb
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\obj\Debug\netcoreapp2.2\Api.csprojAssemblyReference.cache
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cache
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\obj\Debug\netcoreapp2.2\Api.RazorAssemblyInfo.cs
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\obj\Debug\netcoreapp2.2\Api.AssemblyInfoInputs.cache
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\obj\Debug\netcoreapp2.2\Api.AssemblyInfo.cs
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\obj\Debug\netcoreapp2.2\Api.RazorTargetAssemblyInfo.cache
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\obj\Debug\netcoreapp2.2\Api.dll
+C:\Users\RFuertes\Desktop\Test Project\WebApplication1\obj\Debug\netcoreapp2.2\Api.pdb
