@@ -12,6 +12,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Api.Services;
 using ApiProj.Repository.Interfaces;
 using ApiProj.Repository;
+using ApiProj.Hubs;
+using Microsoft.AspNetCore.Identity;
+using Api.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 namespace Api
 {
@@ -25,9 +31,26 @@ namespace Api
 
             string connectionString = Configuration["connectionStrings:bookDbConnectionString"];
             services.AddDbContext<DataContext>(c => c.UseSqlServer(connectionString));
-
+  
             services.AddCors();
             services.AddScoped<IAuthRepository, AuthRepository>();
+     
+            services.AddAuthentication(options =>
+            {
+                options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+            }).AddJwtBearer(options =>
+                {
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuerSigningKey = true,
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(Configuration["AppSettings:Token"])),
+                        ValidateIssuer = false,
+                        ValidateAudience = false
+                    };
+           
+                });
+            services.AddSignalR();
         }
 
         public static IConfiguration Configuration { get; set; }
@@ -45,6 +68,15 @@ namespace Api
             {
                 app.UseDeveloperExceptionPage();
             }
+            app.UseCors(builder => builder.WithOrigins("http://localhost:4200")
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .AllowCredentials());
+            app.UseAuthentication();
+            app.UseSignalR(routes =>
+            {
+                routes.MapHub<ChatHub>("/hubs/notification");
+            });
 
             app.UseMvc();
         }

@@ -33,7 +33,7 @@ namespace Api.Controllers
         public async Task<IActionResult> Login(LoginDto loginDto)
         {
             var user = await _repo.Login(loginDto.Username.ToLower(), loginDto.Password);
-
+            
             if(user == null)
             {
                 return Unauthorized();

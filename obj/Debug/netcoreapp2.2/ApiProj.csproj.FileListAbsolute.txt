@@ -13,3 +13,4 @@ C:\Users\RFuertes\Desktop\Test Project\Api\bin\Debug\netcoreapp2.2\ApiProj.pdb
 C:\Users\RFuertes\Desktop\Test Project\Api\obj\Debug\netcoreapp2.2\ApiProj.RazorTargetAssemblyInfo.cache
 C:\Users\RFuertes\Desktop\Test Project\Api\obj\Debug\netcoreapp2.2\ApiProj.dll
 C:\Users\RFuertes\Desktop\Test Project\Api\obj\Debug\netcoreapp2.2\ApiProj.pdb
+C:\Users\RFuertes\Desktop\Test Project\Api\obj\Debug\netcoreapp2.2\ApiProj.csprojAssemblyReference.cache
