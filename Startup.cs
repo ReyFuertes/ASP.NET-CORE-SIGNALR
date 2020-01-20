@@ -34,7 +34,8 @@ namespace Api
   
             services.AddCors();
             services.AddScoped<IAuthRepository, AuthRepository>();
-     
+            services.AddScoped<IChatMessageRepository, ChatMessageRepository>();
+
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
