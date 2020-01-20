@@ -62,7 +62,8 @@ namespace Api.Controllers
 
             return Ok(new
             {
-                token = tokenHandler.WriteToken(token)
+                token = tokenHandler.WriteToken(token),
+                guid = user.Id
             });
         }
 

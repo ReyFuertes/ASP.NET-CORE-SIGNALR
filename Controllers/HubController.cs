@@ -30,8 +30,8 @@ namespace ApiProj.Controllers
         {
             try
             {
-                //var UserId = ((ClaimsIdentity)User.Identity).Claims.FirstOrDefault().Value;
                 chat.SenderName = User.Identity.Name;
+                chat.Guid = ((ClaimsIdentity)User.Identity).Claims.FirstOrDefault().Value;
                 await _hub.Clients.All.SendAsync("Notification", chat);
 
                 return Ok(true);

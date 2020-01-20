@@ -10,5 +10,6 @@ namespace ApiProj.Models
         public string SenderName { get; set; }
         public string Message { get; set; }
         public DateTimeOffset SentAt { get; set; }
+        public string Guid { get; set; }
     }
 }
